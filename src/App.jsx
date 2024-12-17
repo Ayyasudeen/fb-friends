@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <div className="app-container">
-      {isAuthenticated ? <Home /> : <Login onLogin={handleLogin} />}
+      {!isAuthenticated ? <Home /> : <Login onLogin={handleLogin} />}
     </div>
   );
 };
